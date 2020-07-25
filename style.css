@@ -106,12 +106,6 @@ li a:hover {
     padding-top: 10px;
 }
 
-#galeria{
-    position: relative;
-    background-color: white;
-    
-}
-
 .icones {
   color: white;
   font-size: 36px;
@@ -127,4 +121,33 @@ li a:hover {
 .icone:hover{
   color:#000080;
   transition: 0.5s;
+}
+
+/* PORTFOLIO */
+#Portfolio{
+  background-color:#333333;
+  position: relative;
+  
+}
+
+#colunas2{
+  height: 410px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: #80005a;
+  grid-gap: 20px 50px;
+  
+}
+
+#colunas3{
+  height: 410px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  background-color: aqua;
+  grid-gap: 20px 50px;
+  
+}
+
+p{
+  margin: 0px;
 }
