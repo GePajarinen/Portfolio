@@ -152,18 +152,11 @@ p{
   margin: 0px;
 }
 
-img{
-  
-}
-.medio{
-  
-  
-}
+.um{ background-image: url(img/eu3.jpg);}
+.dois{background-image: url(img/eu4.jpg);}
+.tres{background-image: url(img/eu3.jpg);}
+.quatro{background-image: url(img/eu3.jpg);}
+.cinco{background-image: url(img/eu3.jpg);}
+.seis{ background-image: url(img/eu3.jpg);}
+.sete{background-image: url(img/eu3.jpg);}
 
-.grande{
-  
-}
-
-.pequena{
-  
-}
