@@ -130,30 +130,13 @@ li a:hover {
   
 }
 
-#colunas2{
-  height: 410px;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  background-color: #80005a;
- 
-  
-}
-
-#colunas3{
-  height: 410px;
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  background-color: aqua;
-  
-  
-}
 
 p{
   margin: 0px;
 }
 
-.um{ background-image: url(img/eu3.jpg);}
-.dois{background-image: url(img/eu4.jpg);}
+.um{ background-image: url(horas.png);}
+.dois{background-image: url(tribute.png);}
 .tres{background-image: url(img/eu3.jpg);}
 .quatro{background-image: url(img/eu3.jpg);}
 .cinco{background-image: url(img/eu3.jpg);}
