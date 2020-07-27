@@ -125,7 +125,7 @@ li a:hover {
 
 /* PORTFOLIO */
 #Portfolio{
-  background-color:#333333;
+  background-color:#001D38;
   position: relative;
   
 }
@@ -135,11 +135,37 @@ p{
   margin: 0px;
 }
 
-.um{ background-image: url(horas.png);}
-.dois{background-image: url(tribute.png);}
-.tres{background-image: url(img/eu3.jpg);}
-.quatro{background-image: url(img/eu3.jpg);}
-.cinco{background-image: url(img/eu3.jpg);}
-.seis{ background-image: url(img/eu3.jpg);}
-.sete{background-image: url(img/eu3.jpg);}
+.row{
+  height: 410px;
+  margin: 0px 30px 30px 30px;
+}
+#colunas1{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 20px;
+ 
+}
+
+#colunas2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+
+}
+
+#colunas3{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 20px;
+  
+}
+
+
+.um{ background-image: url(img/horas.png);}
+.dois{background-image: url(img/tribute.png);}
+.tres{background-image: url(img/landing.png);}
+.quatro{background-image: url(img/form.png);}
+.cinco{background-image: url(img/documentarion.png);}
+.seis{ background-image: url(img/transitions.png);}
+.sete{background-image: url(img/snake.png);}
 
