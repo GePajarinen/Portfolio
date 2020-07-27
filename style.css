@@ -9,6 +9,8 @@ html,body
 .container{
   height: 700px;
   width: 100%;
+  border-bottom: #333333;
+  border-style: dashed;
 }
 
 ul{
@@ -26,7 +28,6 @@ ul{
 }
 
 li a {
-  
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -35,14 +36,13 @@ li a {
 }
 
 li a:hover {
-    background-color: black;
-  }
-
-#home{
-    position: relative;
-    background: linear-gradient(138deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  background-color: black;
 }
 
+#home{
+  position: relative;
+  background: linear-gradient(138deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
 
 .objeto{
   border-radius: 50%;
@@ -70,41 +70,41 @@ li a:hover {
 }
 
 #redondo3{
-    height: 400px;
+  height: 400px;
   width: 400px;
-    background-color: white; 
-    opacity: 0.1;
-    position: absolute;
+  background-color: white; 
+  opacity: 0.1;
+  position: absolute;
   top: 0px;
   right: -10px;
 }
 
 .quadro{
-    height: 70px;
-    width: 400px;
-    position: absolute;
-    bottom: 0px;
-    left: 60%;
-    grid-template-columns: 1fr 1fr 1fr;
+  height: 70px;
+  width: 400px;
+  position: absolute;
+  bottom: 0px;
+  left: 60%;
+  grid-template-columns: 1fr 1fr 1fr;
     
 }
 
 #bolinha{
-    height: 10px;
+  height: 10px;
   width: 10px;
-    background-color: white; 
-    opacity: 0.2;
+  background-color: white; 
+  opacity: 0.2;
 }
-.title{
-    color: white;
-    position: relative;
-    margin: auto;
-    text-align: center;
-    top:50%;
-    z-index: 1;
-    font-size: 40px;
-    padding-top: 10px;
 
+.title{
+  color: white;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  top:50%;
+  z-index: 1;
+  font-size: 40px;
+  padding-top: 10px;
 }
 
 .icones {
@@ -116,9 +116,11 @@ li a:hover {
   margin: 10px 50px 10px 10px;
   z-index: 1;
 }
+
 .icone{
   margin-top: 20px;
 }
+
 .icone:hover{
   color:#000080;
   transition: 0.5s;
@@ -128,37 +130,73 @@ li a:hover {
 #Portfolio{
   background-color:#001D38;
   position: relative;
-  
+  padding-right: 50px;
+  padding-left: 50px;
 }
-
 
 p{
   margin: 0px;
 }
 
-#colunas1{
-  margin-left: 50px;
-  margin-right: 50px;
-}
-#colunas2{
-  margin-left: 50px;
-  margin-right: 50px;
-}
-.row{
-  display: flex;
-  justify-content: center 
-
-}
 img{
   height: 410px;
 }
+.img:hover{
+  
+  background: red;
+  transition: 1s;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+}
+
 .imagem{
   display: inline-block;
-  margin: 15px;
-  
+  margin: 10px;
+}
 
+.imagem:hover{
   
 }
+
+.texto{
+  display: block;
+  text-align: center;
+  height: 400px;
+  width: 100%;
+  color: white;
+}
+
+#titulo-portfolio{
+  position: relative;
+  top: 40%;
+}
+.btn{
+  height: 50px;
+  width: 130px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0%;
+  border-color: #b450a3;
+  background-color: white;
+  text-align: center;
+  color: #b450a3;
+  padding-top: 13px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: -75px;
+}
+
+.btn:hover{
+  background-color: #b450a3;
+  color: white;
+  transition: 0.3s;
+}
+
 /** as imagens em block estão mais fáceis de editar **
 .um{ background-image: url(img/horas.png);}
 .dois{background-image: url(img/tribute.png);}
