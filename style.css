@@ -4,7 +4,7 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 .container{
   height: 700px;
@@ -139,7 +139,7 @@ p{
 }
 
 img{
-  height: 410px;
+  max-height: 410px;
 }
 
 .row{
