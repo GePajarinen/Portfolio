@@ -9,8 +9,6 @@ html,body
 .container{
   height: 700px;
   width: 100%;
-  border-bottom: #333333;
-  border-style: dashed;
 }
 
 ul{
