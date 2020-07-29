@@ -6,9 +6,13 @@ html,body
     padding: 0px;
     overflow-x: hidden;
 }
+
+/* FIRST PART : HOME */
 .container{
   height: 700px;
   width: 100%;
+  border-style: dotted;
+  border-top: #000080;
 }
 
 ul{
@@ -124,7 +128,29 @@ li a:hover {
   transition: 0.5s;
 }
 
-/* PORTFOLIO */
+/* SECOND PART: PORTFOLIO */
+#Portfolio{
+  position: relative;
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+
+.box-portfolio{ /* first part of the portfloio*/
+  background-color: #001D38;
+  display: block;
+  text-align: center;
+  height: 400px;
+  width: 100%;
+  color: white;
+}
+
+#titulo-portfolio{
+  position: relative;
+  top: 40%;
+}
+  /* Second part of the portfloio*/
+
+/*
 #Portfolio{
   background-color:#001D38;
   position: relative;
@@ -152,7 +178,7 @@ img{
   position: relative;
 }
 
-/* OVERLAY START*/
+ OVERLAY START
 .top {
   display: block;
 }
@@ -183,7 +209,8 @@ img{
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/*OVERLAY ENDS*/
+ 
+OVERLAY ENDS
 
 .texto-portfolio{
   display: block;
@@ -218,7 +245,7 @@ img{
   background-color: #b450a3;
   color: white;
   transition: 0.3s;
-}
+} */
 
 /** as imagens em block estão mais fáceis de editar **
 .um{ background-image: url(img/horas.png);}
