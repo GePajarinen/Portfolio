@@ -5,6 +5,7 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    font-family: 'Mulish', sans-serif;
 }
 
 /************ FIRST PART : HOME ************/
@@ -101,10 +102,18 @@ li a:hover {
   position: relative;
   margin: auto;
   text-align: center;
-  top:50%;
+  top:40%;
   z-index: 1;
   font-size: 40px;
-  padding-top: 10px;
+}
+
+.b4:before { 
+  content: ”\2013″;
+}
+
+#nome{
+  font-weight: 900;
+  font-size: 4em;
 }
 
 .icones {
@@ -145,6 +154,7 @@ li a:hover {
 #titulo-portfolio{
   position: relative;
   top: 40%;
+  font-size: 20px;
 }
 
 .fotos{ /* Second part of the portfloio*/
@@ -156,7 +166,6 @@ li a:hover {
   height: min-content; /*isso arruma a posicao das fotos mas cobre um aparte 
   do próximo ROW e tem de colocar o ROW pra baixo.
   OLHAR SOBRE ISSO!!! */
-
 }
 
 .line1{
@@ -272,9 +281,20 @@ p{
 }
 
 #foot{
- 
+  height: 400px;
+  background-color: #001D38;
+  color: white;
+  font-family: 'Ubuntu Condensed', sans-serif;
 }
-/*** BUTTONS ***/
+
+.footer{
+  position: relative;
+  text-align: center;
+  top: 40px;
+  font-size: 40px;
+}
+
+/************** BUTTONS **************/
 
 .btn {
   border-style: solid;
@@ -285,7 +305,7 @@ p{
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  font-size: 13px;
+  font-size: 15px;
   width: fit-content;
 }
 
