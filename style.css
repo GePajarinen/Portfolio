@@ -128,9 +128,10 @@ li a:hover {
 
 /************ SECOND PART: PORTFOLIO ************/
 #Portfolio{
+  height: 1350px;
   position: relative;
   display: grid;
-  grid-template-rows: 30% 70%;
+  grid-template-rows: 20% 80%;
 }
 
 .box-portfolio{ /* first part of the portfloio*/
@@ -231,8 +232,7 @@ li a:hover {
 #About{
   display: grid;
   grid-template-columns: 50% 50%;
-  position: relative;
-  top: 75%; /*!! os ROWS das fotos estao cobrindo uma parte desse ROW, entao tem de coloar pra baixo */
+  
 }
 
 .bg-text{
@@ -272,8 +272,7 @@ p{
 }
 
 #foot{
-  position: relative;
-  top: 100%; /*ABSURDO!! */
+ 
 }
 /*** BUTTONS ***/
 
