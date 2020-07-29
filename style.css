@@ -6,17 +6,16 @@ html,body
     padding: 0px;
     overflow-x: hidden;
 }
+
 body{
   display: grid;
-  grid-template-rows: repeat(3,1fr);
+  grid-template-rows: repeat(4,1fr);
 }
 
 /************ FIRST PART : HOME ************/
-.container{
+#home {
   height: 700px;
   width: 100%;
-  border-style: dotted;
-  border-top: #000080;
 }
 
 ul{
@@ -151,19 +150,24 @@ li a:hover {
   position: relative;
   top: 40%;
 }
+
 .fotos{ /* Second part of the portfloio*/
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 45% 45% 10%;
   margin-left: 20px ;
   margin-right: 20px;
   grid-row-gap: 15px;
-  height: 200%;
+  height: min-content; /*isso arruma a posicao das fotos mas cobre um aparte 
+  do próximo ROW e tem de colocar o ROW pra baixo.
+  OLHAR SOBRE ISSO!!! */
+
 }
 
 .line1{
   display: grid;
   grid-template-columns: 40% 58%;
   grid-gap: 15px;
+  height: 100%;
  
 }
 
@@ -175,7 +179,6 @@ li a:hover {
 
 .line3{
   margin-top: 30px;
-  height: fit-content;
 }
 
 /*********** OVERLAY START ************/
@@ -222,60 +225,27 @@ li a:hover {
  
 /************ OVERLAY ENDS ************/
 
-.texto-portfolio{
-  display: block;
-  text-align: center;
-  height: 400px;
-  width: 100%;
-  color: white;
-}
-
 #titulo-portfolio{
   position: relative;
   top: 40%;
 }
-.link-btn{
-  text-decoration: none;
-}
 
-.btn{
-  height: 50px;
-  width: 130px;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0%;
-  border-color: #b450a3;
-  background-color: white;
-  text-align: center;
-  color: #b450a3;
-  padding-top: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  font-size: 13px;
-}
-
-.btn:hover{
-  background-color: #b450a3;
-  color: white;
-  transition: 0.3s;
-} 
 
 /************ THIRD PART: ABOUT ************/
 
 #About{
   display: grid;
-  grid-template-rows: 40% 60%;
+  grid-template-columns: 50% 50%;
+  position: relative;
+  top: 80%; /*!! os ROWS das fotos estao cobrindo uma parte desse ROW, entao tem de coloar pra baixo */
 }
 
 .bg-text{
-  
-  font-size: 135px;
-  color: rgba(169, 169, 169, 0.5);
+  font-size: 177px;
+  color: rgba(169, 169, 169, 0.1);
   position: relative;
-  z-index: 0;
-  bottom: 80px;
-  left: -20px;
+  bottom: 160px;
+  left: 15%;
   
 }
 
@@ -288,28 +258,6 @@ li a:hover {
   bottom: 20%;
 }
 
-.btn-about{
-  height: 50px;
-  width: 130px;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0%;
-  border-color: #b450a3;
-  background-color: #b450a3;
-  text-align: center;
-  color: white;
-  padding-top: 13px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 13px;
-}
-
-.btn-about:hover{
-  background-color: white ;
-  color: #b450a3;
-  transition: 0.3s;
-}
-
 p{
   margin: 0px;
 }
@@ -320,20 +268,58 @@ p{
   line-height: 250%;
 
 }
-.about-part2{
-  display: grid;
-  grid-template-columns: repeat(2,50%);
-  background-color: brown;
-}
-
-.bout-part1{
-  background-color: aquamarine;
-}
 
 .img-about{
   display: block;
   position: relative;
   width: 100%;
-  background-color: blueviolet;
   margin: 0px;
+}
+
+#foot{
+  position: relative;
+  top: 3000%; /*ABSURDO!! */
+}
+/*** BUTTONS ***/
+
+.btn {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0%;
+  text-align: center;
+  padding: 15px 45px 15px 45px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  font-size: 13px;
+  width: fit-content;
+}
+
+.btn-more{
+  border-color: #b450a3;
+  background-color: white;
+  color: #b450a3;
+  margin-top: 20px;
+}
+
+.btn-more:hover{
+  background-color: #b450a3;
+  color: white;
+  transition: 0.3s;
+} 
+
+.btn-about{
+  border-color: #b450a3;
+  background-color: #b450a3;
+  color: white;
+}
+
+.btn-about:hover{
+  background-color: white ;
+  color: #b450a3;
+  transition: 0.3s;
+}
+
+.link-btn{
+  text-decoration: none;
 }
