@@ -6,9 +6,13 @@ html,body
     padding: 0px;
     overflow-x: hidden;
 }
+
+/* FIRST PART : HOME */
 .container{
   height: 700px;
   width: 100%;
+  border-style: dotted;
+  border-top: #000080;
 }
 
 ul{
@@ -124,37 +128,65 @@ li a:hover {
   transition: 0.5s;
 }
 
-/* PORTFOLIO */
+/* SECOND PART: PORTFOLIO */
 #Portfolio{
-  background-color:#001D38;
   position: relative;
-  padding-right: 50px;
-  padding-left: 50px;
+  display: grid;
+  grid-template-rows: 50% 50%;
 }
 
-p{
-  margin: 0px;
+.box-portfolio{ /* first part of the portfloio*/
+  background-color: #001D38;
+  display: block;
+  text-align: center;
+  height: 400px;
+  width: 100%;
+  color: white;
 }
 
-img{
-  max-height: 410px;
+#titulo-portfolio{
+  position: relative;
+  top: 40%;
+}
+.fotos{ /* Second part of the portfloio*/
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  margin-left: 20px ;
+  margin-right: 20px;
+  grid-row-gap: 15px;
 }
 
-.row{
-  display: flex;
-  justify-content: space-between;
-  margin: 0px;
+.line1{
+  display: grid;
+  grid-template-columns: 40% 58%;
+  grid-gap: 15px;
+ 
 }
 
+.line2{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+
+.line3{
+  margin-top: 30px;
+  height: fit-content;
+}
+
+/* OVERLAY START */
 .imagem{
-  display: inline-block;
-  margin: 10px;
+  
   position: relative;
+  max-height: 410px;
+  width: 100%;
 }
 
-/* OVERLAY START*/
 .top {
   display: block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
 }
 
 .overlay {
@@ -183,6 +215,7 @@ img{
   left: 50%;
   transform: translate(-50%, -50%);
 }
+ 
 /*OVERLAY ENDS*/
 
 .texto-portfolio{
@@ -197,6 +230,10 @@ img{
   position: relative;
   top: 40%;
 }
+.link-btn{
+  text-decoration: none;
+}
+
 .btn{
   height: 50px;
   width: 130px;
@@ -211,14 +248,13 @@ img{
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  top: -75px;
 }
 
 .btn:hover{
   background-color: #b450a3;
   color: white;
   transition: 0.3s;
-}
+} */
 
 /** as imagens em block estão mais fáceis de editar **
 .um{ background-image: url(img/horas.png);}
