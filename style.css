@@ -6,8 +6,12 @@ html,body
     padding: 0px;
     overflow-x: hidden;
 }
+body{
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+}
 
-/* FIRST PART : HOME */
+/************ FIRST PART : HOME ************/
 .container{
   height: 700px;
   width: 100%;
@@ -128,20 +132,19 @@ li a:hover {
   transition: 0.5s;
 }
 
-/* SECOND PART: PORTFOLIO */
+/************ SECOND PART: PORTFOLIO ************/
 #Portfolio{
   position: relative;
   display: grid;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 30% 70%;
 }
 
 .box-portfolio{ /* first part of the portfloio*/
   background-color: #001D38;
   display: block;
   text-align: center;
-  height: 400px;
-  width: 100%;
   color: white;
+  margin-bottom: -170px;
 }
 
 #titulo-portfolio{
@@ -154,6 +157,7 @@ li a:hover {
   margin-left: 20px ;
   margin-right: 20px;
   grid-row-gap: 15px;
+  height: 200%;
 }
 
 .line1{
@@ -174,7 +178,7 @@ li a:hover {
   height: fit-content;
 }
 
-/* OVERLAY START */
+/*********** OVERLAY START ************/
 .imagem{
   
   position: relative;
@@ -216,7 +220,7 @@ li a:hover {
   transform: translate(-50%, -50%);
 }
  
-/*OVERLAY ENDS*/
+/************ OVERLAY ENDS ************/
 
 .texto-portfolio{
   display: block;
@@ -244,24 +248,92 @@ li a:hover {
   background-color: white;
   text-align: center;
   color: #b450a3;
-  padding-top: 13px;
+  padding-top: 15px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  font-size: 13px;
 }
 
 .btn:hover{
   background-color: #b450a3;
   color: white;
   transition: 0.3s;
-} */
+} 
 
-/** as imagens em block estão mais fáceis de editar **
-.um{ background-image: url(img/horas.png);}
-.dois{background-image: url(img/tribute.png);}
-.tres{background-image: url(img/landing.png);}
-.quatro{background-image: url(img/form.png);}
-.cinco{background-image: url(img/documentarion.png);}
-.seis{ background-image: url(img/transitions.png);}
-.sete{background-image: url(img/snake.png);}
-*/
+/************ THIRD PART: ABOUT ************/
+
+#About{
+  display: grid;
+  grid-template-rows: 40% 60%;
+}
+
+.bg-text{
+  
+  font-size: 135px;
+  color: rgba(169, 169, 169, 0.5);
+  position: relative;
+  z-index: 0;
+  bottom: 80px;
+  left: -20px;
+  
+}
+
+.box-text-about{
+  margin: auto 10px auto 20px;
+}
+.text-about{
+  margin: auto;
+  position: relative;
+  bottom: 20%;
+}
+
+.btn-about{
+  height: 50px;
+  width: 130px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0%;
+  border-color: #b450a3;
+  background-color: #b450a3;
+  text-align: center;
+  color: white;
+  padding-top: 13px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 13px;
+}
+
+.btn-about:hover{
+  background-color: white ;
+  color: #b450a3;
+  transition: 0.3s;
+}
+
+p{
+  margin: 0px;
+}
+.titulo-about{
+  color: black;
+  font-size: 35px;
+  margin-bottom: 20px;
+  line-height: 250%;
+
+}
+.about-part2{
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+  background-color: brown;
+}
+
+.bout-part1{
+  background-color: aquamarine;
+}
+
+.img-about{
+  display: block;
+  position: relative;
+  width: 100%;
+  background-color: blueviolet;
+  margin: 0px;
+}
