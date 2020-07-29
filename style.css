@@ -7,11 +7,6 @@ html,body
     overflow-x: hidden;
 }
 
-body{
-  display: grid;
-  grid-template-rows: repeat(4,1fr);
-}
-
 /************ FIRST PART : HOME ************/
 #home {
   height: 700px;
@@ -237,7 +232,7 @@ li a:hover {
   display: grid;
   grid-template-columns: 50% 50%;
   position: relative;
-  top: 80%; /*!! os ROWS das fotos estao cobrindo uma parte desse ROW, entao tem de coloar pra baixo */
+  top: 75%; /*!! os ROWS das fotos estao cobrindo uma parte desse ROW, entao tem de coloar pra baixo */
 }
 
 .bg-text{
@@ -278,7 +273,7 @@ p{
 
 #foot{
   position: relative;
-  top: 3000%; /*ABSURDO!! */
+  top: 100%; /*ABSURDO!! */
 }
 /*** BUTTONS ***/
 
