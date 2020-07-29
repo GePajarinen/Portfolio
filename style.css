@@ -231,6 +231,8 @@ li a:hover {
 #About{
   display: grid;
   grid-template-columns: 50% 50%;
+  position: relative;
+  top: 75%; /*!! os ROWS das fotos estao cobrindo uma parte desse ROW, entao tem de coloar pra baixo */
 }
 
 .bg-text{
@@ -245,7 +247,6 @@ li a:hover {
 .box-text-about{
   margin: auto 10px auto 20px;
 }
-
 .text-about{
   margin: auto;
   position: relative;
