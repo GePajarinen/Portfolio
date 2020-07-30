@@ -354,7 +354,6 @@ p{
   padding-top: 40px;
 }
 
-
 .icones-botton {
   color: white;
   font-size: 36px;
@@ -372,6 +371,30 @@ p{
 
 .icone-botton{
   margin: 20px;
+}
+
+/************** HIDDEN TEXT **************/
+
+
+.hobby-box .hide {
+  visibility: hidden;
+  color: #fff;
+  padding: 0px 10px 0px 40px;
+  font-size: 15px;
+}
+
+.hobby-box:hover .hide {
+  visibility: visible;
+}
+
+/************** FOOTER **************/
+
+footer{
+  background-color:#333333;
+  color: #FFFFFF;
+  font-size: 15px;
+  text-align: right;
+  padding: 20px 40px 20px 0px;
 }
 
 /************** BUTTONS **************/
