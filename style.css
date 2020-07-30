@@ -5,7 +5,7 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 /************ FIRST PART : HOME ************/
@@ -107,17 +107,16 @@ li a:hover {
   font-size: 40px;
 }
 
-.b4:before { 
-  content: ”\2013″;
-}
-
 #nome{
   font-weight: 900;
   font-size: 4em;
   word-spacing: 10px;
 }
 
-.icones {
+.dash{
+  font-weight: 50;
+}
+.icones-top {
   color: white;
   font-size: 36px;
   position: absolute;
@@ -127,11 +126,11 @@ li a:hover {
   z-index: 1;
 }
 
-.icone{
+.icone-top{
   margin-top: 20px;
 }
 
-.icone:hover{
+.icone-top:hover{
   color:#000080;
   transition: 0.5s;
 }
@@ -154,8 +153,15 @@ li a:hover {
 
 #titulo-portfolio{
   position: relative;
-  top: 40%;
+  top: 10%;
   font-size: 20px;
+  letter-spacing: 10px;
+}
+#text-portfolio{
+  font-size: 36px;
+  font-weight: bold;
+  position: relative;
+  top: 45%;
 }
 
 .fotos{ /* Second part of the portfloio*/
@@ -247,6 +253,8 @@ li a:hover {
 
 .bg-text{
   font-size: 177px;
+  font-weight: 900;
+  letter-spacing: -25px;
   color: rgba(169, 169, 169, 0.1);
   position: relative;
   bottom: 160px;
@@ -271,7 +279,6 @@ p{
   font-size: 35px;
   margin-bottom: 20px;
   line-height: 250%;
-
 }
 
 .img-about{
@@ -281,18 +288,90 @@ p{
   margin: 0px;
 }
 
-#foot{
-  height: 400px;
+/************** CONTACT **************/
+.hobby{
+  background-color: white;
+  border: #001D38;
+  border-style: double;
+  border-width:10px;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  left: 40%;
+  transition: transform .2s;
+}
+
+.hobby:hover {
+  transform: scale(1.2);
+}
+
+.logo{
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#hr{
+  height: 70px;
+  margin-top: 6%;
+}
+
+#nikerun{
+  height: 60px;
+  margin-top:14%;
+}
+
+#goodreads{
+  height: 40px;
+  margin-top: 25%;
+}
+
+#Contact{
+  display: grid;
+  grid-template-rows: 40% 60%;
+  height: 500px;
   background-color: #001D38;
   color: white;
   font-family: 'Ubuntu Condensed', sans-serif;
 }
 
-.footer{
+.usual-contacts{
+  padding-top: 80px;
+}
+
+.titulo-contatos{
   position: relative;
   text-align: center;
   top: 40px;
-  font-size: 40px;
+  font-size: 20px;
+  letter-spacing: 10px;
+}
+
+.hobby-contacts{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  padding-top: 40px;
+}
+
+
+.icones-botton {
+  color: white;
+  font-size: 36px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  position: relative;
+  top: 15%;
+  transition: transform .2s;
+}
+
+.icone-botton:hover{
+  transform: scale(1.2);
+}
+
+.icone-botton{
+  margin: 20px;
 }
 
 /************** BUTTONS **************/
@@ -335,6 +414,6 @@ p{
   transition: 0.3s;
 }
 
-.link-btn{
+a{
   text-decoration: none;
 }
