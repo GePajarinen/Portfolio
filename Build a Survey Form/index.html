@@ -1,0 +1,228 @@
+<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+
+<!--  Meta  -->
+<meta charset="UTF-8" />
+  
+<title>Survey Form</title>
+
+<!--  Styles  -->
+<link rel="stylesheet"  href="style.css" />
+
+
+<div class="container">
+  <header class="header">
+    <h1 id="title">The Library Survey Form</h1>
+    <p id="description">
+      Apply for subscription
+    </p>
+  </header>
+  <form id="survey-form">
+   
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Full name"
+        required
+      />
+    </div>
+   
+    <div class="form-group">
+      <label id="email-label" for="email">E-mail</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="E-mail"
+        required
+      />
+    </div>
+    
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age:</label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    
+    <div class="form-group">
+      <p>Which option best describes your current role?</p>
+      
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="student">Student</option>
+        <option value="job">Teacher</option>
+        <option value="learner">Visitor</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Would you like to receive an e-mail about the new arrivals?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Weekly</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Monthly</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />No. Thanks</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        What you use the most?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="books">The books</option>
+        <option value="computers">Library's computers</option>
+        <option value="fantasy">Library's cafe</option>
+        <option value="cafe">Studying room</option>
+        <option value="allOfThem">All of them</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What is your favorite gener?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="biography"
+          type="checkbox"
+          class="input-checkbox"
+        />Biography</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="classics"
+          type="checkbox"
+          class="input-checkbox"
+        />Classics</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="cookbooks"
+          type="checkbox"
+          class="input-checkbox"
+        />Cookbooks</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="fantasy"
+          type="checkbox"
+          class="input-checkbox"
+        />Fantasy</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="fiction"
+          type="checkbox"
+          class="input-checkbox"
+        />Fiction</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="historical-fiction"
+          type="checkbox"
+          class="input-checkbox"
+        />Historical Fiction</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="history"
+          type="checkbox"
+          class="input-checkbox"
+        />History</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="science"
+          type="checkbox"
+          class="input-checkbox"
+        />Science</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="self-help"
+          type="checkbox"
+          class="input-checkbox"
+        />Self help</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="thriller"
+          type="checkbox"
+          class="input-checkbox"
+        />Thriller</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="comic-book"
+          type="checkbox"
+          class="input-checkbox"
+        />Comic book</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or book suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>

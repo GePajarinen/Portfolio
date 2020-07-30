@@ -1,0 +1,187 @@
+h2{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2em;
+    padding: 50px 50px 0px 50px;
+    margin-top: 0px;
+}
+p{
+    font-family: 'Muli', sans-serif;
+    font-size: 1em;
+    padding: 0px 500px 0px 40px ;
+}
+.topo {
+    max-width: 1440px; /*!!*/
+    opacity: 0.6;
+    float: center;
+    top: 0%;
+}
+
+#navbar {
+    position: fixed;
+    background-color: #333;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  
+#navbar a {
+   float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1em;
+  }
+  
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+.box {
+    float: center;
+    padding: 0px;
+    margin-top: 20px;
+    width: 100%;
+
+    height: 600px;
+    background-position: center top; /*Topo da imagem começa sem cortar*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.picard{
+    background-image: url(picard.jpeg);
+    /*  https://i.postimg.cc/dtzCp5W7/picard-copy.jpg - imagem para o CodePen */
+}
+
+.janeway{
+    background-image: url(janeway2.jpg);   
+    /* https://i.postimg.cc/QMnKgSWx/janeway2.jpg - imagem para o CodePen*/
+}
+
+.sisko{
+    background-image: url(sisko.png);  
+    /* https://i.postimg.cc/9Mh5kH9x/sisko.png - imagem para o CodePen*/
+}
+
+
+/*overlay*/
+
+.overlay{
+    color: white;
+    position: relative;
+    max-width: 100%;
+    padding: 0px;
+    height: 100%;
+    opacity: 0.0;
+    transition: 0.5s;
+    animation-timing-function: ease;
+    top: 0px;
+    bottom: 0px;
+    left:0%;
+    z-index: 1;
+}
+
+.overlay:hover {
+    opacity: 1;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,8,0.5396533613445378) 35%); /*  https://cssgradient.io/  */
+    width: 100%;
+   
+    /*box-shadow: 5px 5px 10px 20px black;*/
+}
+
+/*Mudar a direção da Jane: olha isso:
+https://stackoverflow.com/questions/22928997/css-transition-two-directions
+*/
+.jane:hover{
+    opacity: 1;
+    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(0,0,8,0.5396533613445378) 35%);
+    width: 100%;
+    text-align: right;
+}
+.text-jane{
+    padding: 0px 40px 0px 500px ;
+}
+
+footer{
+    background-color: #2b3036;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    margin-top: 10px;
+}
+
+#footer-text{
+    color: white;
+    font-size: 1em;
+    text-align: right;
+    font-style: italic;
+    margin: 0;
+    padding-right: 35px;
+}
+
+/* MOBILE */
+
+@media only screen and (max-width: 600px){
+    topo {
+        width: 100%;
+    }
+    p {
+        padding: 0px 10px 0px 40px ;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+    }
+
+    h2{
+        padding-top: 5px;
+    }
+    
+    .box {
+        width: 100%; 
+        margin-top: 10px;
+        background-color: black;
+        height: 520px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    
+    .picard{
+        background-image: url(picard2-375.jpg);
+         /*  https://i.postimg.cc/XvD6d7qp/picard2-375.jpg - Image for CodePen */
+    }
+    .janeway{
+        background-image: url(janeway-375.jpg);
+        /* https://i.postimg.cc/2j08TmtF/janeway-375.jpg - Image for CodePen */
+
+    }
+    .sisko{
+        background-image: url(sisko2-375.jpg);
+         /* https://i.postimg.cc/3RsMfSgh/sisko2-375.jpg - Image for CodePen */
+    }
+
+    .jane:hover{
+        text-align: left;
+    }
+
+    .text-jane{
+        padding: 0px 10px 0px 40px ;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+    }
+    
+    #footer-text{
+        text-align: left;
+        position: inherit;
+    }
+
+
+}
