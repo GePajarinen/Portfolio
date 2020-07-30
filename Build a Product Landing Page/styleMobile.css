@@ -1,0 +1,146 @@
+body{ 
+    font-family: 'Roboto', sans-serif;
+    color: #342b38;
+    position:relative;
+    margin:0;
+    text-align: center;
+  }
+
+h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 150%;
+}
+
+.logo {
+    background-color: #ff9595;
+    padding: 10px;
+    text-align: center;
+    font-size: 350%;
+    font-family: 'Pacifico', cursive;
+}
+
+li { 
+    display: block; 
+    padding: 10px;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    background-color: #ff9595;
+    list-style-type:none;
+    font-size: 350%;
+}
+li:hover{
+    background-color: #E58686; 
+}
+
+a {
+text-decoration: none;
+color: white;
+text-shadow: 1px 1px #FF0000;
+}
+
+ul {
+padding: 0px;
+margin:0px;
+}
+.content{
+    margin: auto;
+    width: 90%;
+    padding: 5% 0% 0% 0%;
+    text-align: center;
+    font-size: 150%;
+}
+form{
+    margin: auto;
+    width: 40%;
+}
+
+p{
+    padding-bottom: 3%;
+}
+
+.content-video{
+    padding:0%;
+    margin: 5% 10% 5% 10%;
+
+}
+.caption{
+    width: 102%;
+    font-size: 90%;
+    font-style: italic;
+}
+
+iframe{
+    width: 100%;
+}
+.select{
+    margin: 0% 10% 0% 10%;
+}
+
+.product{
+    background: #ff9595;
+    text-align: center;
+    padding: 1% 0% 1% 0%;
+    margin: 0%;
+}
+.price{
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    line-height: 1;
+    padding: 0%;
+}
+span {
+    text-align: center;
+}
+.block {
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: #342b38;
+    margin-bottom: 5% ;
+}
+
+.button{ 
+    position: relative;
+    left: 0%;
+    padding: 2% 0% 2% 0%;
+    width: 40%;
+    border: 2px;
+    color: white;
+    background-color: #ff9900;
+    font-size: 200%;
+    margin-bottom: 5%;
+  }
+  
+.button:hover {
+    background-color:#fbc687;
+  }
+
+.submit{
+    position: relative;
+    left: -7%;
+    padding: 2% 0% 2% 0%;
+    width: 100%;
+    border: 2px;
+    color: white;
+    background-color: #ff9900;
+    font-size: 150%;
+}
+
+input{
+    padding: 2% 2% 2% 2%;
+    font-size: 150%;
+    margin-bottom: 2%;
+    position: relative;
+    left: -7%;
+
+}
+
+footer {
+    padding:10px 50px 10px 0;
+    background-color: #342b38;
+    text-align: right;
+    color: white;
+    font-style: italic;
+    font-size: 60%;
+  }
+   

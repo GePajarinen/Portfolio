@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Landing Page</title>
+  
+  <!--  Styles  -->
+  <link rel="stylesheet"  media="screen and (min-device-width: 320px) and (max-device-width: 500px)" href="styleMobile.css" />
+  <link rel="stylesheet"  media="screen and (min-device-width: 501px)" href="styleMain.css" />
+
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Roboto:wght@100&display=swap');
+    </style>
+    </head>
+  <body>
+    <nav>
+      <div class= "logo"> #Candies </div>
+        <ul>
+          <li><a class="nav-link" href="#features">Features</a></li>
+          <li><a class="nav-link" href="#video">Instrutions</a></li>
+          <li><a class="nav-link" href="#prices">Prices</a></li>
+        </ul>
+      </nav>
+    
+    <section id="section" class="content">
+      <div class="div-content">
+      <h2 class="h2content">Handcrafted, home-made candies</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input id="email"
+          name="email"
+          type="email"
+          placeholder="Enter your email" required/>
+      <input id="submit" class="button submit"
+        type="submit" 
+        value="Get to know more" />
+    </form>
+  </div>
+  </section>
+      
+    <section id="features"class="content box"> 
+      <div class="textbox">
+      <h2>Premium Materials</h2>
+      <p>Our candies use the best ingrediente which is sourced locally.</p>
+    </div>
+
+    <div class="textbox">
+      <h2>Fast Shipping</h2>
+      <p>We make sure you recieve your candies as soon as we have finished making them.</p>
+      </div>
+
+      <div class="textbox">
+      <h2>Quality Assurance</h2>
+      <p>For every purchase you make, we will ensure there are no damages or faults and we will check everything.</p>
+    </div>
+    </section>
+    
+    <section id="video" class="content video"> 
+      <div class="div-video">
+      <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/qfG6OToYfaE" frameborder="5" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+      </br>
+      <p class="caption">Video by @Cooking tree: Oreo Macarons Recipe</p>
+    </div>
+    </section>
+
+    <section id="prices" class="select content">
+       <div class="block one">
+         <h2 class="product"> Macarons</h2>
+         <p class= "price">$6</p>
+         <span><p>Lemon </br> Strawberry </br> Coconut </br> Lavander</p><span>
+           <button class="button">Select</button>
+      </div>
+       <div class="block two">
+         <h2 class="product">Churros</h2>
+         <p class= "price">$3</p>
+        <span><p> White Chocolate </br> Chocolate </br> Vanilla</p><span>
+           <button class="button">Select</button>
+      </div>
+       <div class="block three">
+         <h2 class="product">Panna Cotta</h2>
+         <p class= "price">$4</p>
+         <span><p>Vanilla </br> Citrus </br> Almond</p><span>
+            <button class="button">Select</button>
+      </div>
+    </section>
+    <footer>Gesiane Pajarinen: Practicing - fev/2020</footer>
+  </body>
+</html>
