@@ -494,23 +494,24 @@ a{
   /* FIM NAVBAR*/
 
   #nome{
-    font-size: 38px;
-    font-weight: 100;
+    font-size: 55px;
     position: relative;
-    top: 45%;
+    top: 30%;
   }
 
   .title{
-    top:45%;
+    top:30%;
   }
 
   .icones-top{
     font-size: 25px;
-    top: 13%;
+    top: 10%;
     left:84%;
   }
 
+  .icone-top:hover,
   .icone-top:focus {
-    transform: scale(1.2);
+    color:#FFFFFF;
+    transform: scale(1.3);
   }
 }
