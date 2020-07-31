@@ -12,6 +12,8 @@ html,body
 #home {
   height: 700px;
   width: 100%;
+  position: relative;
+  background: linear-gradient(138deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 }
 
 ul{
@@ -38,11 +40,6 @@ li a {
 
 li a:hover {
   background-color: black;
-}
-
-#home{
-  position: relative;
-  background: linear-gradient(138deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 }
 
 .objeto{
@@ -439,4 +436,42 @@ footer{
 
 a{
   text-decoration: none;
+}
+
+/************** MOBILE **************/
+@media only screen and (max-width: 425px) {
+
+  #home {
+    height: 570px;
+    width: 100%;
+    position: relative;
+    background: rgba(252,70,107,1);
+  }
+  /*
+  ul{
+      position: fixed;
+      z-index: 2;
+      height: 50px;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 25% 10% 10% 15% 10% 30%;
+      background-color:#333333;
+  }
+  
+  li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  li a:hover {
+    background-color: black;
+  }
+  */
 }
