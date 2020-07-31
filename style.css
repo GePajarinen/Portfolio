@@ -127,6 +127,7 @@ li:hover {
 .dash{
   font-weight: 50;
 }
+
 .icones-top {
   color: white;
   font-size: 36px;
@@ -490,6 +491,26 @@ a{
   .navtop:focus .drop-down-mobile {
     display:block;
   }
-  
+  /* FIM NAVBAR*/
 
+  #nome{
+    font-size: 38px;
+    font-weight: 100;
+    position: relative;
+    top: 45%;
+  }
+
+  .title{
+    top:45%;
+  }
+
+  .icones-top{
+    font-size: 25px;
+    top: 13%;
+    left:84%;
+  }
+
+  .icone-top:focus {
+    transform: scale(1.2);
+  }
 }
