@@ -206,7 +206,6 @@ li:hover {
 
 /*********** OVERLAY START ************/
 .imagem{
-  
   position: relative;
   max-height: 410px;
   width: 100%;
@@ -469,17 +468,24 @@ a{
     text-align: center;
     padding: 15px 0px 15px 0px;
   }
+
+  .navtop{
+    position: relative;
+    z-index: 1;
+  }
     
+  .drop-down-mobile { /*ul*/
+    background-color: #333333;
+    text-align: center;
+    display: none;
+    width: 100%;
+  }
+  
   li{
     width: 100%;
     padding: 15px 0px 15px 0px;
   }
-    
-  .drop-down-mobile {
-    background-color: #333333;
-   display: none;
-  }
-  
+
   .navtop:hover .drop-down-mobile,
   .navtop:focus .drop-down-mobile {
     display:block;
