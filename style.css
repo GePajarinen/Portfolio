@@ -23,7 +23,9 @@ html,body
   margin:0px;
   background-color: #333333;
   display: flex; 
-  justify-content: center
+  justify-content: center;
+  position: fixed;
+  z-index: 2;
 }
 
 #mobile-btn{
@@ -45,10 +47,11 @@ li a{
 }
 a{
   display: block;
+  padding: 14px;
 }
+
 li{
   display: inline-block;
-  padding: 15px;
 }
 
 li:hover {
@@ -456,7 +459,7 @@ a{
 @media only screen and (max-width: 425px) {
 
   #home {
-    height: 570px;
+    height: 590px;
     width: 100%;
     position: relative;
     background: linear-gradient(138deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
@@ -471,8 +474,8 @@ a{
   }
 
   .navtop{
-    position: relative;
-    z-index: 1;
+    position: fixed;
+    z-index: 2;
   }
     
   .drop-down-mobile { /*ul*/
@@ -484,7 +487,7 @@ a{
   
   li{
     width: 100%;
-    padding: 15px 0px 15px 0px;
+    
   }
 
   .navtop:hover .drop-down-mobile,
@@ -496,11 +499,12 @@ a{
   #nome{
     font-size: 55px;
     position: relative;
-    top: 30%;
+    top: 40%;
   }
 
   .title{
-    top:30%;
+    top:40%;
+    font-size: 30px;
   }
 
   .icones-top{
@@ -509,9 +513,24 @@ a{
     left:84%;
   }
 
+  .icone-top{
+    margin: 0px;
+  }
+
   .icone-top:hover,
   .icone-top:focus {
     color:#FFFFFF;
     transform: scale(1.3);
+  }
+
+  #titulo-portfolio{
+    top:20%;
+    padding: 0px 30px 0px 30px;
+  }
+
+  #text-portfolio{
+    top:30%;
+    font-size: 25px;
+    padding: 0px 30px 0px 30px;
   }
 }
