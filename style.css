@@ -487,7 +487,6 @@ a{
   
   li{
     width: 100%;
-    
   }
 
   .navtop:hover .drop-down-mobile,
@@ -523,11 +522,11 @@ a{
     transform: scale(1.3);
   }
 
+  /** Images **/
   #Portfolio{
     height: 345%;
     display: grid;
     grid-template-rows: auto auto;
-
   }
 
   #titulo-portfolio{
@@ -538,9 +537,9 @@ a{
   #text-portfolio{
     top:30%;
     font-size: 25px;
-    padding: 0px 30px 0px 30px;
-    
+    padding: 0px 30px 0px 30px;  
   }
+
   .box-portfolio{
     display: block;
     height: 300px;
@@ -548,7 +547,6 @@ a{
   }
 
   .fotos{ /* Second part of the portfloio*/
-    
     margin: 0px;
     grid-template-rows: 36% 53% 10%;
   }
@@ -556,7 +554,6 @@ a{
   .line1, .line2 {
     display: grid;
     grid-template-columns: auto;
-   
   }
   
   .line1 {
@@ -580,7 +577,6 @@ a{
     padding: 0px;
   }
   
-  /*********** OVERLAY START ************/
   .imagem{
     position: relative;
     height: 300px;
@@ -598,10 +594,6 @@ a{
   width: 100%;
   }
 
-  .box-text-about{
-   
-  }
-
   .bg-text{
     display: none;
   }
@@ -612,8 +604,74 @@ a{
     margin-bottom: 30px;
     margin-top: 50px;
   }
-  /*---*/
-  
 
+  /** Contacts **/
+  #Contact{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    height: 500px;
+    background-color: #001D38;
+    color: white;
+    font-family: 'Ubuntu Condensed', sans-serif;
+  }
+  
+  .usual-contacts{
+    padding-top: 40px;
+    display: inline;
+  }
+  
+  .titulo-contatos{
+    position: relative;
+    top: 40px;
+  }
+  
+  .icone-botton:hover, 
+  .icone-botton:focus {
+    transform: scale(1.2);
+  }
+
+  .hobby-box{
+    height: 300px;
+  }
+
+  #hr{
+  margin-top: 0px;
+  bottom: 9px;
+  }
+
+  #nikerun{
+    height: 60px;
+    margin-top: 0px;
+    bottom: 4px;
+  }
+  
+  #goodreads{
+    height: 40px;
+    margin-top: 7px;
+  }
+
+  .hobby-contacts{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-top: 40px;
+  }
+
+  .hobby{
+    left: 15px;
+  }
+ 
+  /** HIDDEN TEXT **/
+  .hide {
+    display: none;
+  }
+
+  footer{
+    font-size: 12px;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+  }
+  
 }
+
+
 
