@@ -283,9 +283,11 @@ li:hover {
 }
 
 .text-about{
-  margin: auto;
+  margin-left: 20px;
+  margin-right: 20px;
   position: relative;
   bottom: 20%;
+  
 }
 
 p{
@@ -446,6 +448,7 @@ footer{
   border-color: #b450a3;
   background-color: #b450a3;
   color: white;
+  padding: 0px 30px;
 }
 
 .btn-about:hover{
