@@ -209,6 +209,10 @@ li:hover {
 }
 
 /*********** OVERLAY START ************/
+.click{
+  display: none;
+}
+
 .imagem{
   position: relative;
   max-height: 410px;
@@ -262,7 +266,6 @@ li:hover {
 #About{
   display: grid;
   grid-template-columns: 50% 50%;
-  
 }
 
 .bg-text{
@@ -273,12 +276,12 @@ li:hover {
   position: relative;
   bottom: 160px;
   left: 15%;
-  
 }
 
 .box-text-about{
   margin: auto 10px auto 20px;
 }
+
 .text-about{
   margin: auto;
   position: relative;
@@ -581,7 +584,17 @@ a{
     width: 95%;
     margin: 10px;
   }
+
+  .text-overlay{
+    font-size: 15px;
+
+  }
   
+  .click{
+    display: block;
+    text-align: right;
+  }
+
   /* ABOUT */
   #About{
     display: contents;
