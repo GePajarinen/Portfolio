@@ -1,7 +1,6 @@
 # Portfolio-Webpage
 Building a Personal Portfolio Webpage    
--- In Progress --
 
-[For now, just for desktop screen.](https://gepajarinen.github.io/Portfolio/)   
-Mobile coming soon..
+[Ready. Click to check it out.](https://gepajarinen.github.io/Portfolio/)   
+
 
